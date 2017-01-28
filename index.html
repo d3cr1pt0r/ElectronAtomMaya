@@ -5,7 +5,10 @@
     <title>Maya COM</title>
   </head>
   <body>
-    <textarea id='command' style='width: 400px; height: 200px;'>ls()</textarea><br>
+    <textarea id='command' style='width: 400px; height: 200px;'>import maya.cmds as cmds
+
+cmds.playblast(startTime=0, endTime=0, widthHeight=[256, 256], indexFromZero=False, viewer=False, percent=100, framePadding=0, showOrnaments=False, format='image', filename='D:/thumb.png')
+print 'DONE'</textarea><br>
     <button id='command-send'>Send</button>
   </body>
 
